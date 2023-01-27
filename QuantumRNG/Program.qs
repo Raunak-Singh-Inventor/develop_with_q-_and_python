@@ -12,7 +12,7 @@ namespace QuantumRNG {
         mutable output = 0;
         mutable res = new Result[len+1];
         repeat {
-            for i in 0 .. len {
+            for i in 0 .. len { 
                 let bit = GenerateRandomBit();
                 set res w/= i <- bit;
             }
